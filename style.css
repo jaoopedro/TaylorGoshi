@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f5f1ec, #ede6de);
+  color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Loading */
+#loading {
+  text-align: center;
+  color: #7b2d2d;
+  animation: fade 2s infinite alternate;
+}
+
+@keyframes fade {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}
+
+/* App */
+#app {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 20px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #7b2d2d;
+  margin-bottom: 12px;
+}
+
+/* Pet */
+.pet-container {
+  position: relative;
+  margin: 20px 0 10px;
+}
+
+#pet {
+  width: 180px;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+}
+
+#pet.animate {
+  transform: scale(1.06);
+}
+
+/* Thought bubble */
+.thought {
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  color: #7b2d2d;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  max-width: 220px;
+}
+
+/* Stats */
+.stats {
+  margin-top: 10px;
+}
+
+.stats p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+/* Buttons */
+.actions {
+  margin-top: 14px;
+}
+
+.actions button {
+  margin: 6px 4px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #7b2d2d;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.actions button:hover {
+  background: #9a3b3b;
+  transform: translateY(-1px);
+}
+
+/* Secret button */
+#secretBtn {
+  background: transparent;
+  border: 1px dashed #7b2d2d;
+  color: #7b2d2d;
+}
+
+#secretBtn:hover {
+  background: #7b2d2d;
+  color: #ffffff;
+}
+
+/* Achievements */
+.achievements {
+  margin-top: 18px;
+  text-align: left;
+}
+
+.achievements h2 {
+  font-size: 16px;
+  color: #7b2d2d;
+  margin-bottom: 6px;
+}
+
+.achievements ul {
+  padding-left: 18px;
+  font-size: 13px;
+}
