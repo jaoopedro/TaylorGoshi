@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>RED Era Pet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADING -->
+  <div id="loading">
+    <h1>TaylorGoshi</h1>
+    <p>Carregando a era...</p>
+  </div>
+
+  <!-- APP -->
+  <div id="app" class="hidden">
+    <h1>TaylorGoshi</h1>
+
+    <div class="pet-container">
+      <div id="thought" class="thought hidden">
+        fala que ama o pedro
+      </div>
+      <img id="pet" src="taylor.png" alt="Taylor Pet">
+    </div>
+
+    <div class="stats">
+      <p>🍎 Fome: <span id="hunger"></span></p>
+      <p>⚡ Energia: <span id="energy"></span></p>
+      <p>😊 Felicidade: <span id="happiness"></span></p>
+    </div>
+
+    <div class="actions">
+      <button onclick="feed()">🍎 Comer</button>
+      <button onclick="sleep()">😴 Dormir</button>
+      <button onclick="sing()">🎤 Cantar</button>
+      <button id="secretBtn" class="hidden" onclick="secret()">🔐 Segredo da Taylor</button>
+    </div>
+
+    <div class="achievements">
+      <h2>🏆 Conquistas</h2>
+      <ul id="achievementList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
